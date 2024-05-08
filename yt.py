@@ -3,36 +3,30 @@ from pytube import Playlist
 import os
 
 class Download_each:
-  def __init__(self,isaudio):
-    link = input("유튜브 동영상 url 입력 후 enter : ")
-    yt = YouTube(link)
-    filePath = yt.streams.filter(only_audio=isaudio).first().download()
-
-    if isaudio==True:    
-      mp3FilePath = filePath.replace('mp4','mp3')
-      os.rename(filePath,mp3FilePath)
-    else:
-      return
-
-class Download_Playlist:
-  def __init__(self,isaudio):
-    pllink = input("유튜브 플레이리스트 url 입력 후 enter : ")
-    pl = Playlist(pllink)
-
-    counter = 1
-    for url in pl.video_urls:
-      # print(counter,":",len(pl.video_urls)*counter/100)
-      print(counter,":",counter/len(pl.video_urls)*100,"%")
-      yt = YouTube(url)
-      try:
+    def __init__(self,isaudio):
+        link = input("유튜브 동영상 url 입력 후 enter : ")
+        yt = YouTube(link)
         filePath = yt.streams.filter(only_audio=isaudio).first().download()
-      except:
-        continue
-
-      if isaudio==True:
         mp3FilePath = filePath.replace('mp4','mp3')
         os.rename(filePath,mp3FilePath)
-    counter+=1
+
+
+class Download_Playlist:
+    def __init__(self,isaudio):
+        pllink = input("유튜브 플레이리스트 url 입력 후 enter : ")
+        pl = Playlist(pllink)
+
+        counter = 1
+        for url in pl.video_urls:
+            print(counter,":",len(pl.video_urls)*counter/100)
+            yt = YouTube(url)
+            try:
+                filePath = yt.streams.filter(only_audio=isaudio).first().download()
+            except:
+                continue
+            mp3FilePath = filePath.replace('mp4','mp3')
+            os.rename(filePath,mp3FilePath)
+            counter+=1
 
 #-----------------------------------
 
