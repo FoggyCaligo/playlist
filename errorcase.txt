@@ -3,3 +3,7 @@
 -1. go to /data/data/com.termux/files/usr/lib/python3.11/site-packages/pytube/cipher.py
 -2. open cipher.py
 -3. line30 replace to     re.compile(r"^$*\w+\W")"
+
+
+C:\Users\bigla\AppData\Local\Programs\Python\Python312\
+C:\Users\bigla\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytube
