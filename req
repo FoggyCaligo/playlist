@@ -1,0 +1,3 @@
+깃허브 용량 큰파일 푸시 
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+

@@ -1,0 +1,6 @@
+
+pkg install python
+
+
+pkg install ffmpeg
+pip install yt_dlp
