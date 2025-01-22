@@ -6,7 +6,7 @@ def down_audio(url):
   'extract_audio': True,
   'overwrites':True,
   "merge_output_format": 'mp3',
-  
+  "--cookies":'./cookies.txt'
  }
  with yt_dlp.YoutubeDL(ydlOpts) as ydl:
   ydl.download([url])
@@ -23,6 +23,7 @@ def down_video(url):
  with yt_dlp.YoutubeDL(ydlOpts) as ydl:
   ydl.download([url])
 
+#test url : https://youtu.be/Nr3AhMP1lVg?si=hKhSEAgw5QF0Bj9A
 
 
 def main():
