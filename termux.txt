@@ -1,0 +1,51 @@
+<pkg>
+pkg install git, gh, git-lfs, micro, python, 
+pip install 
+
+python3 -m pip install -U "yt-dlp[default]"
+
+
+
+
+
+<git-lfs>
+1. pkg install git-lfs
+2. cd <git repo folder>
+3. git lfs install
+4. git rm --cached *
+5. git lfs track *
+6. git add .gitattributes
+7. git commit -m "cmsg"
+8. git push
+
+
+<gh>
+
+
+
+
+<clone git repo>
+gh repo clone FoggyCaligo/playlist 
+git lfs pull
+gh repo clone FoggyCaligo/stocklog
+git lfs pull
+
+
+
+<~/.bashrc>
+alias music='cd ~/storage/music/playlist'
+alias stocklog='cd ~/storage/stocklog'
+
+alias push='git add -A & git commit -m update & git push'
+alias push_lfs='git add .gitattributes & git add . & git commit -m msg & git push origin main'
+
+
+git pull
+
+
+
+
+<bashrc.txt>
+alias music='cd ~/storage/music/git/playlist'
+alias stocklog='cd ~/storage/stocklog
+
