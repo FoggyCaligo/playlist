@@ -1,7 +1,0 @@
-alias music='cd ~/storage/music/git/playlist'
-alias stocklog='cd ~/storage/music/git/stocklog'
-alias push='git add -A & git commit -m upload & git push'
-alias update='git pull & git add -A & git commit -m update & git push'
-alias editbash='micro ~/.bashrc'
-alias savebash='cp ~/.bashrc ~/storage/music/git/playlist'
-alias applybash='source ~/.bashrc & cp ~/.bashrc ~/storage/music/git/playlist'
