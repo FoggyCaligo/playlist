@@ -2,11 +2,10 @@ import yt_dlp
 
 def down_audio(url):
  ydlOpts={
-  'format':'bestaudio[ext=m4a]/best[ext=mp3]/best',
+  'format':'bestaudio[ext=m4a]/bestaudio[ext=mp3]/bestaudio/best',
   'extract_audio': True,
   'overwrites':True,
-  "merge_output_format": 'mp3',
-  
+  "merge_output_format": 'm4a',
  }
  with yt_dlp.YoutubeDL(ydlOpts) as ydl:
   ydl.download([url])
