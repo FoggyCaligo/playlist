@@ -1,27 +1,34 @@
 import yt_dlp
 
 def down_audio(url):
- ydlOpts={
-  'format':'bestaudio[ext=m4a]/bestaudio[ext=mp3]/bestaudio/best',
-  'extract_audio': True,
-  'overwrites':True,
-  "merge_output_format": 'm4a',
+ ydlOpts = {
+  'format': 'bestaudio/best',
+  'outtmpl': '%(title)s.%(ext)s',
+  'overwrites': True,
+  'postprocessors': [{
+    'key': 'FFmpegExtractAudio',
+    'preferredcodec': 'mp3',
+    'preferredquality': '192',
+  }],
+  'extractor_args': {'youtube': {'player_client': ['web']}},
  }
  with yt_dlp.YoutubeDL(ydlOpts) as ydl:
   ydl.download([url])
-
 
 def down_video(url):
- ydlOpts={
-    #"format": 'best[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
-    "format": 'best/best',
-    "writesubtitles":'best',
-    "writethumbnail":'best' ,
-    "overwrites": True,
+ ydlOpts = {
+   'format': 'bestaudio/best',
+   'outtmpl': '%(title)s.%(ext)s',
+   'overwrites': True,
+   'postprocessors': [{
+       'key': 'FFmpegExtractAudio',
+       'preferredcodec': 'mp4',
+       'preferredquality': '192',
+   }],
+   'extractor_args': {'youtube': {'player_client': ['web']}},
  }
  with yt_dlp.YoutubeDL(ydlOpts) as ydl:
-  ydl.download([url])
-
+    ydl.download([url])
 
 
 def main():
