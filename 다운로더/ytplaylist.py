@@ -4,7 +4,7 @@ import yt_dlp
 COMMON_OPTS = {
     # 브라우저 쿠키가 있으면 자동으로 사용
     # 파일이 없으면 옵션이 무시되어도 무방
-    # 'cookiefile': 'cookies.txt' if os.path.exists('cookies.txt') else None,
+    'cookiefile': 'cookies.txt' if os.path.exists('cookies.txt') else None,
 
     # 최신 브라우저 UA 흉내 (간혹 필요)
     'http_headers': {
@@ -33,7 +33,6 @@ COMMON_OPTS = {
     'extractor_retries': 5,
     'ignoreerrors': 'only_download',  # 일부 실패 시 계속
 }
-AUDIO_FORMAT = "140/251/139/249"
 
 def down_audio(url: str):
     ydl_opts = {
@@ -41,8 +40,8 @@ def down_audio(url: str):
         'format': 'bestaudio/best',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'm4a',
-            # 'preferredquality': '192',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
         }],
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
