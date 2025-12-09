@@ -1,1 +1,0 @@
-./yt-dlp.exe -f 140 "https://www.youtube.com/watch?v=PVKCsYOk8ts&list=PLR1UKOR9SpbFrbDzfg5xTv7S_PnLCwdW0"

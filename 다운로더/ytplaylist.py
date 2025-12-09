@@ -9,8 +9,8 @@ COMMON_OPTS = {
     # 최신 브라우저 UA 흉내 (간혹 필요)
     'http_headers': {
         'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                       'AppleWebKit/537.36 (KHTML, like Gecko) '
-                       'Chrome/129.0.0.0 Safari/537.36'),
+            'AppleWebKit/537.36 (KHTML, like Gecko) '
+            'Chrome/129.0.0.0 Safari/537.36'),
         'Accept-Language': 'en-US,en;q=0.9,ko;q=0.8',
     },
 
