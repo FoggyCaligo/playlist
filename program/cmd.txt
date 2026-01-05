@@ -1,3 +1,0 @@
-./yt-dlp.exe -f 140 "https://www.youtube.com/watch?v=PVKCsYOk8ts&list=PLR1UKOR9SpbFrbDzfg5xTv7S_PnLCwdW0"
-
-.\yt-dlp.exe -f "bestaudio[ext=m4a]" -o "%(title)s.%(ext)s" "https://www.youtube.com/watch?v=CybkNRQGsYg&list=PLR1UKOR9SpbFSnQpDAZliXBk02-xGKIoG"
