@@ -1,5 +1,8 @@
 <start>
-winget install yt-dlp
+1. clone repo
+  git clone --depth 1 --single-branch https://github.com/FoggyCaligo/playlist.git
+2. download downloader
+  winget install yt-dlp
 
 
 
