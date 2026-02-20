@@ -12,13 +12,13 @@ yt-dlp --update-to master
 yt-dlp --update
 
 <use>
-yt-dlp --no-abort-on-error --no-write-thumbnail --paths [TYPES:]./playlist    [OPTIONS] [--] URL [URL...]
+yt-dlp --no-abort-on-error --no-write-thumbnail -P "./playlist" --audio-quality 0 -t sleep "url"
 
 <download - single song>
-yt-dlp --no-abort-on-error --no-write-thumbnail -P "./playlist"  --audio-format m4a --audio-quality 0 [URL]
+yt-dlp --no-abort-on-error --no-write-thumbnail  -P "./playlist" --audio-quality 0 --extract-audio -t sleep 
 
 <download - playlist>
-yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./playlist" --audio-format m4a --audio-quality 0 -t sleep [URL]
+yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./playlist" --audio-quality 0 --extract-audio -t sleep "https://www.youtube.com/watch?v=6BA0LwyBUPk&list=PLR1UKOR9SpbGVN00AhAT4tV5fiIzyPbMl"
 
 <download - video>
 yt-dlp --keep-video --no-abort-on-error --no-write-thumbnail --paths [TYPES:]./playlist --audio-format mp4 --audio-quality 0 [URL]
