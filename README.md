@@ -18,7 +18,7 @@ yt-dlp --no-abort-on-error --no-write-thumbnail --paths [TYPES:]./playlist    [O
 yt-dlp --no-abort-on-error --no-write-thumbnail -P "./playlist"  --audio-format m4a --audio-quality 0 [URL]
 
 <download - playlist>
-yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./playlist" --audio-format m4a --audio-quality 0 [URL]
+yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./playlist" --audio-format m4a --audio-quality 0 -t sleep [URL]
 
 <download - video>
 yt-dlp --keep-video --no-abort-on-error --no-write-thumbnail --paths [TYPES:]./playlist --audio-format mp4 --audio-quality 0 [URL]
