@@ -4,6 +4,7 @@
 2. download downloader
   winget install yt-dlp
 
+tmux
 
 
 <update>
