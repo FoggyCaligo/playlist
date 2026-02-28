@@ -18,10 +18,10 @@ yt-dlp --no-abort-on-error --no-write-thumbnail -P "./playlist" --audio-quality 
 yt-dlp --no-abort-on-error --no-write-thumbnail  -P "./playlist" --audio-quality 0 --extract-audio -t sleep 
 
 <download - playlist>
-yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./playlist" --audio-quality 0 --extract-audio -t sleep "https://www.youtube.com/watch?v=6BA0LwyBUPk&list=PLR1UKOR9SpbGVN00AhAT4tV5fiIzyPbMl"
+yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./tmp" --audio-quality 0 --extract-audio -t sleep "https://www.youtube.com/watch?v=l0WArCNh6G0&list=PLR1UKOR9SpbF26BT3PKYR1NnHG4rzgqWO"
 
 <download - video>
-yt-dlp --keep-video --no-abort-on-error --no-write-thumbnail --paths [TYPES:]./playlist --audio-format mp4 --audio-quality 0 [URL]
+yt-dlp --keep-video --no-abort-on-error --no-write-thumbnail --paths [TYPES:]./tmp --audio-format mp4 --audio-quality 0 [URL]
 yt-dlp -t mp4 [URL]
 
 <help>

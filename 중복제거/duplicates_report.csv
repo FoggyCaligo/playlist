@@ -1,1 +1,5 @@
 ﻿group_id,file_a,file_b,duration_a_sec,duration_b_sec,duration_ratio_short_over_long,shared_shingles_count,jaccard_similarity,decision
+1,C:\Users\user\Music\playlist\playlist\Angel With a Shotgun [e0YcG7ofCYg].opus,C:\Users\user\Music\playlist\playlist\Angel With a Shotgun [uc4Qw1zts6A].opus,223.00,223.00,1.000,470,1.0000,DUPLICATE_CANDIDATE
+2,C:\Users\user\Music\playlist\playlist\Celebrity (Celebrity) [es6bbfAjk3I].opus,C:\Users\user\Music\playlist\playlist\Celebrity (Celebrity) [ZThVobEtp_o].opus,195.00,195.00,1.000,470,1.0000,DUPLICATE_CANDIDATE
+3,C:\Users\user\Music\playlist\playlist\Hit on Shot [n3olyokZ5Ak].opus,C:\Users\user\Music\playlist\playlist\아이리 칸나 x 아카네 리제  ｜ ‘Hit On Shot’ [suyhkCwKX48].opus,196.00,208.00,0.942,347,0.5852,DUPLICATE_CANDIDATE
+4,C:\Users\user\Music\playlist\playlist\KIDDING [93mZo1XTH5I].opus,C:\Users\user\Music\playlist\playlist\이세계아이돌 (ISEGYE IDOL) - KIDDING (키딩) Official MV [rDFUl2mHIW4].opus,210.00,216.00,0.972,237,0.3371,DUPLICATE_CANDIDATE
