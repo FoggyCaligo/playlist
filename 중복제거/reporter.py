@@ -8,6 +8,8 @@ duplicates_report.csv 생성기 (Chromaprint fpcalc 기반)
 
 요구사항:
 - fpcalc (Chromaprint) 가 PATH에 있어야 함
+
+python reporter.py "../" --out duplicates_report.csv --threshold 0.28 --min-shared 40 --dur-ratio-min 0.70 --dur-ratio-max 1.35
 """
 
 #test
