@@ -11,6 +11,7 @@ tmux
 yt-dlp --update-to master
 <update-simple>
 yt-dlp --update
+winget upgrade yt-dlp
 
 <use>
 yt-dlp --no-abort-on-error --no-write-thumbnail -P "./playlist" --audio-quality 0 -t sleep "url"
@@ -19,7 +20,7 @@ yt-dlp --no-abort-on-error --no-write-thumbnail -P "./playlist" --audio-quality 
 yt-dlp --no-abort-on-error --no-write-thumbnail  -P "./playlist" --audio-quality 0 --extract-audio -t sleep 
 
 <download - playlist>
-yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./tmp" --audio-quality 0 --extract-audio -t sleep "https://www.youtube.com/watch?v=l0WArCNh6G0&list=PLR1UKOR9SpbF26BT3PKYR1NnHG4rzgqWO"
+yt-dlp --no-abort-on-error --no-write-thumbnail --yes-playlist -P "./tmp" --audio-quality 0 --extract-audio -t sleep "https://www.youtube.com/watch?v=CbuiRlGeA-g&list=PLZUdM_yLFDVA"
 
 <download - video>
 yt-dlp --keep-video --no-abort-on-error --no-write-thumbnail --paths [TYPES:]./tmp --audio-format mp4 --audio-quality 0 [URL]
